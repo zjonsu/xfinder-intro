@@ -85,6 +85,15 @@
   .badge{font-size:13px;font-weight:600;color:var(--ink-2);background:var(--card);
     border:1px solid var(--line);padding:7px 14px;border-radius:999px;box-shadow:var(--shadow-sm)}
   .badge svg{width:14px;height:14px;vertical-align:-2px;margin-right:5px}
+  .dl-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px;margin-top:32px}
+  .dl-btn{display:inline-flex;align-items:center;gap:9px;padding:14px 32px;border-radius:14px;
+    font-size:16px;font-weight:700;letter-spacing:-0.01em;text-decoration:none;cursor:pointer;
+    background:linear-gradient(130deg,var(--brand),var(--ai));color:#fff;
+    box-shadow:0 4px 20px rgba(99,102,241,.35);transition:transform .15s,box-shadow .15s}
+  .dl-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(99,102,241,.45)}
+  .dl-btn svg{width:18px;height:18px;flex-shrink:0}
+  .dl-note{font-size:12px;color:var(--muted);text-align:center;margin-top:8px}
+  .dl-note a{color:var(--muted);text-decoration:underline;text-underline-offset:2px}
   .stat-strip{display:flex;flex-wrap:wrap;gap:34px;justify-content:center;margin-top:42px}
   .stat-strip .n{font-size:30px;font-weight:800;letter-spacing:-0.03em;
     background:linear-gradient(120deg,var(--brand),var(--ai));-webkit-background-clip:text;background-clip:text;color:transparent}
@@ -326,6 +335,16 @@
     <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v2M15 2v2M9 20v2M15 20v2M2 9h2M2 15h2M20 9h2M20 15h2"/></svg>Apple Silicon &amp; Intel</span>
     <span class="badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Xcode 없이 빌드</span>
   </div>
+
+  <div class="dl-row">
+    <a class="dl-btn" href="https://github.com/zjonsu/xfinder-intro/releases/download/v1.0.0/XFinder-1.0.dmg" download>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v12M8 11l4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+      XFinder 다운로드 — 무료
+    </a>
+  </div>
+  <p class="dl-note">macOS 14 이상 · Apple Silicon &amp; Intel · 2.1 MB<br>
+    처음 실행 시 <b>우클릭 → 열기</b>로 실행하세요 (자체 서명 앱).
+    &nbsp;·&nbsp;<a href="https://github.com/zjonsu/xfinder-intro/releases/tag/v1.0.0" target="_blank">릴리즈 노트</a></p>
 
   <div class="stat-strip">
     <div><div class="n">~7,700</div><div class="l">줄의 Swift 코드</div></div>
