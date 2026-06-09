@@ -13,6 +13,3 @@ Package.resolved
 .swiftpm/xcode/xcuserdata/
 xcuserdata/
 DerivedData/
-
-# Claude Code local settings
-.claude/settings.local.json
